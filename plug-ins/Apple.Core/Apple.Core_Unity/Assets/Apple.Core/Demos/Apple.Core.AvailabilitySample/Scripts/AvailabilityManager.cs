@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX && (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS))
 using Apple.Core;
 using System.Collections;
 using System.Collections.Generic;
@@ -37,3 +38,4 @@ public class AvailabilityManager : MonoBehaviour
         }
     }
 }
+#endif // (UNITY_EDITOR_OSX && (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS))
