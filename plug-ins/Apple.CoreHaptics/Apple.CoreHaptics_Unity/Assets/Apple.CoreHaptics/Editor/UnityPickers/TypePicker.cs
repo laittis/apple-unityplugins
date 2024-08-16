@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
@@ -51,3 +52,4 @@ namespace UnityPickers
 		}
 	}
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

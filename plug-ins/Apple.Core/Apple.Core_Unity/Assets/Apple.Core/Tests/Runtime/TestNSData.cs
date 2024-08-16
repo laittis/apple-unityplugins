@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using NUnit.Framework;
 
 using Apple.Core.Runtime;
@@ -21,3 +22,4 @@ public class TestNSData
         Assert.AreEqual("test", testString.ToString());
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

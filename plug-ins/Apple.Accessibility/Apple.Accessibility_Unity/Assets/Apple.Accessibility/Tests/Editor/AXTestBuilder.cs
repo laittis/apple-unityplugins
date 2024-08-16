@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using Apple.Accessibility.UnitTests;
 using Apple.Core.Tests.Editor;
 
@@ -39,3 +40,4 @@ namespace Apple.Accessibility.UnitTests
         }
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

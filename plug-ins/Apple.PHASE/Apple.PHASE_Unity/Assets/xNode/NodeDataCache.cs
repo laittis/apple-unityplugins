@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -234,3 +235,4 @@ namespace XNode {
         }
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

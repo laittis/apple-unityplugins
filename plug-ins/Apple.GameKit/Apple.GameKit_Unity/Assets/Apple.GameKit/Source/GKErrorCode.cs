@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using System;
 
 namespace Apple.GameKit
@@ -72,3 +73,4 @@ namespace Apple.GameKit
         FriendRequestNotAvailable = 103,
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using Apple.PHASE;
 using UnityEngine;
 
@@ -14,3 +15,4 @@ public class AmbienceBlender : MonoBehaviour
         _source.SetMetaParameterValue("CrowdCheer", _crowdBlend);
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

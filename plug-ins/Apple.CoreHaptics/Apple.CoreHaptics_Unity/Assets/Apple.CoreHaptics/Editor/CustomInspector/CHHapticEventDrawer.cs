@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using Apple.CoreHaptics;
 using System;
 using System.Collections.Generic;
@@ -389,3 +390,4 @@ public class CHHapticEventDrawer : PropertyDrawer {
         return unselectedParams[0];
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

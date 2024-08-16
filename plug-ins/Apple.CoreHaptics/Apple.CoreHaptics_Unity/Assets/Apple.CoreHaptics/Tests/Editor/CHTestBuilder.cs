@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using Apple.CoreHaptics.UnitTests;
 using Apple.Core.Tests.Editor;
 
@@ -44,3 +45,4 @@ namespace Apple.CoreHaptics.UnitTests
         }
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

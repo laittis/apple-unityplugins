@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 /*----------------------------------------------------------------------------------------
  *   Copyright (c) Apple. All rights reserved.
  *----------------------------------------------------------------------------------------*/
@@ -54,3 +55,4 @@ public class CHAhapImporter : ScriptedImporter
         return CHSerializer.Deserialize(jsonString);
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

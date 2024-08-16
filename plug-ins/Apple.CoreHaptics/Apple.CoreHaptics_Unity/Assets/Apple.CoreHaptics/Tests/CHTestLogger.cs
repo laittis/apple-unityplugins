@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using NUnit.Framework.Interfaces;
 using System;
 using UnityEngine;
@@ -56,3 +57,4 @@ public class CHTestLogger : MonoBehaviour
         LogToiOS(resultMessage);
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

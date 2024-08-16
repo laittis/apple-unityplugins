@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using System;
 using System.Collections.Generic;
 
@@ -93,3 +94,4 @@ namespace Apple.Core
         public ObsoletedAttribute(string message, string iOS = "", string macOS = "", string tvOS = "", string visionOS = "") : base(message, iOS, macOS, tvOS, visionOS) {}
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

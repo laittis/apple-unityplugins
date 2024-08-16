@@ -1,4 +1,4 @@
-#if (UNITY_EDITOR_OSX || (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS))
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
@@ -45,4 +45,4 @@ namespace Apple.Core
         #endregion
     }
 }
-#endif // (UNITY_EDITOR_OSX || (UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS))
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

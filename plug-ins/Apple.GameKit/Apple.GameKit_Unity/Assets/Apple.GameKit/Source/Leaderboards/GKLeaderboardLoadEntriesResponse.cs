@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using System;
 using System.Runtime.InteropServices;
 using Apple.Core.Runtime;
@@ -23,3 +24,4 @@ namespace Apple.GameKit.Leaderboards
         public long TotalPlayerCount;
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
