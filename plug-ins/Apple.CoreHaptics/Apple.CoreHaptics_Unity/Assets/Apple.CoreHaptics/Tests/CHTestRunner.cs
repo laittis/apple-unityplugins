@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using NUnit.Framework.Interfaces;
 using UnityEngine.TestRunner;
 using Apple.Core.Tests;
@@ -40,3 +41,4 @@ public class CHResultSerializer : AppleTestRunner
         base.RunFinished(testResults);
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

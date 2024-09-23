@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,3 +22,4 @@ namespace XNode {
 		public new T graph { get { return base.graph as T; } set { base.graph = value; } }
 	}
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

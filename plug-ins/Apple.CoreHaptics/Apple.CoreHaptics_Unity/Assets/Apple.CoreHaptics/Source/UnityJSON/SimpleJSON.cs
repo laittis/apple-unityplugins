@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿//#define USE_SharpZipLib
 #if !UNITY_WEBPLAYER
 #define USE_FileIO
@@ -1430,3 +1431,4 @@ namespace Apple.SimpleJSON
 		}
 	}
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

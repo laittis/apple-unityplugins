@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,3 +22,4 @@ public class UIButtonImage : MonoBehaviour
         buttonImage.sprite = Sprite.Create(tex, r, v);
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

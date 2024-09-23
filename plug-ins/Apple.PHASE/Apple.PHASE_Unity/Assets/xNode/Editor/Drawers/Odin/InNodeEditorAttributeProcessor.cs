@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿#if UNITY_EDITOR && ODIN_INSPECTOR
 using System;
 using System.Collections.Generic;
@@ -46,3 +47,4 @@ namespace XNodeEditor {
 	}
 }
 #endif
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

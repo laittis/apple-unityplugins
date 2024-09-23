@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using Apple.CoreHaptics;
 using System.Collections.Generic;
 using System;
@@ -302,3 +303,4 @@ public class BallManager : MonoBehaviour
 		_textureHapticPlayer.SendParameters(hapticParameters);
 	}
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

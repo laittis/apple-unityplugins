@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using UnityEngine;
 
 public class EdgeColliderSetup : MonoBehaviour
@@ -86,3 +87,4 @@ public class EdgeColliderSetup : MonoBehaviour
 		_bottomCollider.transform.position = new Vector3(cameraPos.x, cameraPos.y - screenSize.y - _bottomCollider.transform.localScale.y * 0.5f, zPosition);
 	}
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,3 +33,4 @@ namespace Apple.GameKit.Sample
         public event EventHandler ButtonClick;
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

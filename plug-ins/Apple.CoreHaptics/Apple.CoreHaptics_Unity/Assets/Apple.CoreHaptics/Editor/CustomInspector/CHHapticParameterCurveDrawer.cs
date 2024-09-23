@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using Apple.CoreHaptics;
 using UnityEngine;
 using UnityEditor;
@@ -168,3 +169,4 @@ public class CHHapticParameterCurveDrawer : PropertyDrawer
 		return lines * 1.25f * EditorGUIUtility.singleLineHeight;
 	}
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

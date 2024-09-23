@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using Apple.PHASE;
 using System.IO;
 using System.Linq;
@@ -89,3 +90,4 @@ public class PHASESoundEventSamplerNodeEditor : NodeEditor
         return subDirectory;
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 ﻿using UnityEngine;
 
 namespace XNodeEditor.Internal {
@@ -18,3 +19,4 @@ namespace XNodeEditor.Internal {
 		public Vector2 GetPoint() { return port.GetReroutePoints(connectionIndex) [pointIndex]; }
 	}
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)

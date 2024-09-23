@@ -1,3 +1,4 @@
+#if (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
 using Apple.CoreHaptics;
 using UnityEngine;
 using UnityEditor;
@@ -73,3 +74,4 @@ public class CHHapticDynamicParameterDrawer : PropertyDrawer {
         return prop.isExpanded ? 3 * 1.25f * EditorGUIUtility.singleLineHeight : EditorGUIUtility.singleLineHeight;
     }
 }
+#endif // (UNITY_EDITOR_OSX || UNITY_IOS || UNITY_TVOS || UNITY_STANDALONE_OSX || UNITY_VISIONOS)
